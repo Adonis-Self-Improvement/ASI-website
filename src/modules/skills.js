@@ -1,3 +1,5 @@
+import { XP } from "../objects/definitions";
+
 export const fetchSkillData = () => {
   return [
     {
@@ -8,7 +10,7 @@ export const fetchSkillData = () => {
       frequency: 1,
       interval: "day",
       timelimit: 3,
-      xp: 50,
+      xp: new XP(25, 0, 0, 0, 25),
       clickable: true,
     },
     {
@@ -19,7 +21,7 @@ export const fetchSkillData = () => {
       frequency: 1,
       interval: "day",
       timelimit: 7,
-      xp: 150,
+      xp: new XP(75, 0, 0, 0, 75),
       clickable: true,
     },
     {
@@ -30,7 +32,7 @@ export const fetchSkillData = () => {
       frequency: 4,
       interval: "week",
       timelimit: 14,
-      xp: 125,
+      xp: new XP(0, 125, 0, 0, 0),
       clickable: true,
     },
     {
@@ -38,15 +40,15 @@ export const fetchSkillData = () => {
       clickable: false,
     },
     {
-      title: "Discipline",
-      level: 1,
+      title: "Download Now!",
+      level: 0,
       goal: "Download Skilltree and level up IRL",
-      xp: 4200,
+      xp: new XP(840, 840, 840, 840, 840),
       timelimit: 365,
       interval: "day",
       frequency: 1,
-      image: require("../images/skills/discipline.png"),
-      clickable: true,
+      image: require("../images/logos/Gold-Logo.png"),
+      clickable: true
     },
     {
       title: "???",
